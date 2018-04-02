@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>天天掌柜OSS</title>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.../js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body >
+<form id="ossForm" class="form-horizontal">   <div class="input-group">
+              <input type="text" data-type="dateTime" id="abc11" value="2017-07-12 10:39" placeholder="交易时间起" readonly data-rule="isNotNull">
+              <span class="input-group-addon form_date-addon">至</span>
+              <input type="text" data-type="dateTimeSec" id="abc233" readonly data-rule="isNotNull">
+              <span class="input-group-addon"><i class="iconfont">&#xe611;</i></span> </div>
+                <div class="input-group">
+              <input type="text" data-type="dateTime" id="starttime" value="2017-07-12 10:39" placeholder="交易时间起" readonly data-rule="isNotNull">
+              <span class="input-group-addon form_date-addon">至</span>
+              <input type="text" data-type="dateTimeSec" id="endtime" readonly data-rule="isNotNull">
+              <span class="input-group-addon"><i class="iconfont">&#xe611;</i></span> </div> <div class="form-wrap">
+            <label for="" class="wrap-key ">手机号</label>
+            <div class="wrap-value">
+              <textarea rows="3" class="form-control"  data-rule="isNotNull"></textarea>
+            </div>
+            <div class="wrap-value">
+              <textarea rows="3" class="form-control"></textarea>
+            </div>
+            <div class="wrap-value">
+              <textarea rows="3" class="form-control" data-rule="isNotNull"></textarea>
+            </div>
+            <div class="wrap-value">
+              <input type="text" id="text001" class="form-control " min="0" max="100" placeholder="minmax"  data-rule="isNotNull">
+            </div>
+            <div class="wrap-value">
+              <input type="text" class="form-control " placeholder="请输入手机号码"  data-rule="tel" >
+            </div>
+          </div><div class="wrap-value">
+              <label class="">
+                            <input type="radio" id="" value="checkboxName1" name="checkboxName" data-rule="notNull">
+                            <i class="checkbox"></i>
+                            湖南银联管理员</label>
+                            <label class="">
+                            <input type="radio" id="" value="checkboxName2" name="checkboxName" data-rule="notNull">
+                            <i class="checkbox"></i>
+                            湖南银联操作员</label>
+                            <label class="">
+                            <input type="radio" id="" value="checkboxName3" name="checkboxName" data-rule="notNull">
+                            <i class="checkbox"></i>
+                            湖南银联审核员</label>
+             
+   
+            </div><div class="wrap-value">
+ <label class="">
+                            <input type="checkbox" id="" value="checkbox1" name="checkbox" data-rule="notNull">
+                            <i class="checkbox"></i>
+                            湖南银联管理员</label> <label class="">
+                            <input type="checkbox" id="" value="checkbox1" name="checkbox" data-rule="notNull">
+                            <i class="checkbox"></i>
+                            湖南银联管理员</label>
+              <label class="">
+                            <input type="checkbox" id="" value="checkbox1" name="checkbox" data-rule="notNull">
+                            <i class="checkbox"></i>
+                            湖南银联管理员</label>
+   
+            </div><div class="form-group"><div class="col-sm-2 control-label">卡类型</div> <div class="col-sm-10"><select data-rule="notNull" class="form-control"><option value="0">
+                        银行卡
+                      </option><option value="1">
+                        贷记卡
+                      </option><option value="2">
+                        借记卡
+                      </option><option value="3">
+                        准贷记卡
+                      </option><option value="4">
+                        开环预付费卡
+                      </option><option value="5">
+                        闭环储值卡
+                      </option><option value="">
+                        请选择卡类型
+                      </option></select></div></div> <div class="form-group"><div class="col-sm-2 control-label">卡组织</div> <div class="col-sm-10"><select data-rule="notNull" class="form-control"><option value="">
+                        请选择卡组织
+                      </option><option value="UP">
+                        中国银联
+                      </option><option value="VI">
+                        Visa
+                      </option><option value="MC">
+                        MasterCard
+                      </option><option value="AX">
+                        美国运通
+                      </option><option value="DC">
+                        大莱
+                      </option><option value="JC">
+                        JCB
+                      </option><option value="DS">
+                        发现卡
+                      </option><option value="FU">
+                        中国银联（境外发行）
+                      </option></select></div></div> <div class="form-group"><div class="col-sm-2 control-label">境外卡组织</div> <div class="col-sm-10"><select data-rule="notNull" class="form-control"><option value="">
+                        请选择卡组织
+                       </option><option value="UP">
+                        中国银联
+                       </option><option value="VI">
+                        Visa
+                       </option><option value="MC">
+                        MasterCard
+                       </option><option value="AX">
+                        美国运通
+                       </option><option value="DC">
+                        大莱
+                       </option><option value="JC">
+                        JCB
+                       </option><option value="DS">
+                        发现卡
+                       </option><option value="FU">
+                        中国银联（境外发行）
+                       </option></select></div></div> <div class="form-group"><div class="col-sm-2 control-label">卡号前缀</div> <div class="col-sm-10"><input type="text" placeholder="卡号前缀" data-rule="isNotNull" readonly="readonly" class="form-control"></div></div> <div class="form-group"><div class="col-sm-2 control-label">中文名称</div> <div class="col-sm-10"><input type="text" placeholder="中文名称" data-rule="isNotNull" class="form-control"></div></div> <div class="form-group"><div class="col-sm-2 control-label">英文名称</div> <div class="col-sm-10"><input type="text" placeholder="英文名称" class="form-control"></div></div> <div class="form-group"><div class="col-sm-2 control-label">身份鉴别方式</div> <label class="radio-inline"><input type="radio" name="status" value="0">签名认证
+                </label> <label class="radio-inline"><input type="radio" name="status" value="1">PIN认证
+                </label> <label class="radio-inline"><input type="radio" name="status" value="2">签名或者PIN认证
+                </label></div> <div class="form-group"><div class="col-sm-2 control-label">允许手工输入卡号</div> <label class="radio-inline"><input type="radio" name="allowManual" value="false">否
+                </label> <label class="radio-inline"><input type="radio" name="allowManual" value="true">是
+                </label></div> <div class="form-group"><div class="col-sm-2 control-label">三磁道优先读取标志</div> <label class="radio-inline"><input type="radio" name="track3First" value="false">否
+                </label> <label class="radio-inline"><input type="radio" name="track3First" value="true">是
+                </label></div> <div class="form-group"><div class="col-sm-2 control-label">二磁道卡号偏移</div> <div class="col-sm-10"><input type="text" placeholder="二磁道卡号偏移" class="form-control"></div></div> <div class="form-group"><div class="col-sm-2 control-label">三磁道卡号偏移量</div> <div class="col-sm-10"><input type="text" placeholder="三磁道卡号偏移量" class="form-control"></div></div> <div class="form-group"><div class="col-sm-2 control-label">卡号长度</div> <div class="col-sm-10"><input type="text" placeholder="卡号长度" data-rule="isNotNull" class="form-control"></div></div> <div class="form-group"><div class="col-sm-2 control-label">发卡机构</div> <div class="col-sm-10"><select name="issuerId" data-rule="notNull" class="form-control"><option value="">--请选择--</option> <option value="00010030">
+                            中国银联支付标记
+                        </option><option value="00010033">
+                            银联国际支付标记
+                        </option><option value="01000000">
+                            中国邮政储蓄银行
+                        </option><option value="01004900">
+                            中国邮政储蓄银行
+                        </option><option value="01005500">
+                            中国邮政储蓄银行
+                        </option><option value="01009999">
+                            中国邮政储蓄银行
+                        </option><option value="01020000">
+   </select></div></div> <div class="form-group"><div class="col-sm-2 control-label">是否检查卡号</div> <label class="radio-inline"><input type="radio" name="forceUpdate" value="false">否
+                </label> <label class="radio-inline"><input type="radio" name="forceUpdate" value="true">是
+                </label></div> <div class="form-group"><div class="col-sm-2 control-label"></div> <input type="button" value="确定" class="btn btn-primary" id="jsBtnLogin">
+        &nbsp;&nbsp;<input type="button" value="返回" class="btn btn-warning" id="jsBtnCancel"></div> <div class="form-group" style="display: none;"><div class="col-sm-2 control-label"></div> 
+        &nbsp;&nbsp;<input type="button" value="返回" class="btn btn-warning" ></div></form>
+
+
+<script src="validateForm.js"></script>
+<script src="validateRules.js"></script>
+<script type="text/javascript">   
+  window.onload = function () {
+    
+    var btnLogin = document.getElementById("jsBtnLogin");
+    validateForm.init('ossForm')
+    EventUtil.addHandler(btnLogin, "click", function(event) { //选择其它方式支付
+      event = EventUtil.getEvent(event);//获取事件对象;
+      event.preventDefault;
+       console.log(validateForm.submit('ossForm')); 
+    })
+    EventUtil.addHandler(document.getElementById("jsBtnCancel"), "click", function(event) { //选择其它方式支付
+      
+
+      validateForm.delAllErrorMessage('ossForm')
+    })
+    
+    EventUtil.addHandler(document.getElementById("text001"), "keypress", function(event) { //选择其它方式支付
+        event = EventUtil.getEvent(event);//获取事件对象;        
+        if(event.keyCode == 13){
+            console.log('回车激活',event.keyCode)
+            event.preventDefault;
+            event.stopPropagation();
+        }
+    })
+
+  }
+</script>
+</body>
+</html>
