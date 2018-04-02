@@ -4,12 +4,14 @@ javaScript实现的表单校验，可自由配置任意校验规则
 功能描述：校验表单，校验表单中的输入框、单选框、下拉框
 
 @ HTML代码示例 
-        <input type="number" data-rule="text" max="10"  min="1"/>
-        <input type="text" data-rule="text"/>
-        <input type="checkbox" value="" name="" data-rule="notNull">
-        <select data-rule="notNull">
-            <option value="option12">text</option>
+
+        <input type="number" data-rule="text" max="10"  min="1"/>        
+        <input type="text" data-rule="text"/>        
+        <input type="checkbox" value="" name="" data-rule="notNull">        
+        <select data-rule="notNull">        
+            <option value="option12">text</option>            
         </select>
+        
         
 @ html示例参数说明
         data-rule:可省，为空和省略则表示不校验。
